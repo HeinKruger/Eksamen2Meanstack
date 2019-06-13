@@ -1,10 +1,62 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html lang = "en-ca">
 <head>
-    <meta charset="UTF-8">
-    <title>Title</title>
+    <script type="text/javascript" src = "app/app.js"></script>
+    <meta charset  ="utf-8">
+    <title> Inline List</title>
+    <link rel = "stylesheet"
+          type = "text/css"
+          href = "style.css" />
 </head>
 <body>
 
+<header>
+    <h1> Sliders </h1>
+    <nav>
+        <ul class = "nav">
+            <li><a href = "index.html"> Main</a></li>
+            <li><a href = "Add.html">add</a></li>
+            <li><a href = "Slider.html">Sliders</a></li>
+            <li><a href = "Output.html">output</a></li>
+        </ul>
+    </nav>
+</header>
+<form>
+    <fieldset>
+
+        <div class="slidecontainer">
+
+            <h5 align="left">Q1</h5>
+            <input type="range" value ="0" lsit="tickmarks" min="0" max="5" step="1" class="slider" id="myRangeQ1" oninput="rangeValueQ1.value =value ;">
+            <output id="rangeValueQ1">0</output>
+
+        </div>
+
+        <div class="slidecontainer">
+
+            <h5 align="left">Q2</h5>
+            <input type="range" value ="0" lsit="tickmarks" min="0" max="5" step="1" class="slider" id="myRangeQ2" oninput="rangeValueQ2.value = value ;">
+            <output id="rangeValueQ2">0</output>
+        </div>
+
+        <div class="slidecontainer">
+
+            <h5 align="left">Q3</h5>
+            <input type="range" value ="0" lsit="tickmarks" min="0" max="5" step="1" class="slider" id="myRangeQ3" oninput="rangeValueQ3.value = value ;">
+            <output id="rangeValueQ3">0</output>
+
+        </div>
+
+        <input Value="next" onclick="slide();location.href='Output.html'" type="button">
+
+
+    </fieldset>
+
+
+
+</form>
+
 </body>
+
+
 </html>
